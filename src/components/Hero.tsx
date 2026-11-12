@@ -101,8 +101,8 @@ export function Hero({ onOpenBooking }: HeroProps) {
               <Phone className="w-3.5 h-3.5 text-amber-800 shrink-0" />
               <span>
                 Liever telefonisch reserveren? Bel ons gerust op{' '}
-                <a href={`tel:${SALON_INFO.contact.phoneRaw}`} className="font-medium text-stone-800 hover:text-amber-900 underline underline-offset-2">
-                  {SALON_INFO.contact.phone}
+<a href={'tel:' + SALON_INFO.contact.phoneRaw} className="font-medium text-stone-800 hover:text-amber-900 underline underline-offset-2">
+{SALON_INFO.contact.phone}
                 </a>
               </span>
             </div>
