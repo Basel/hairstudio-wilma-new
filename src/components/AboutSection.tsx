@@ -1,5 +1,7 @@
+```tsx
 import { CheckCircle2, Heart, Award, Users, Coffee } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
+import stylingImage from '../assets/images/styling_craft_action_1794477311576.jpg';
 
 export function AboutSection() {
   const highlights = [
@@ -36,9 +38,8 @@ export function AboutSection() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-md border border-stone-200/80 bg-white">
                 <img
-                  src="/src/assets/images/styling_craft_action_1794477311576.jpg"
+                  src={stylingImage}
                   alt="Vakmanschap en precisie bij Hairstudio Wilma in Grootegast"
-                  referrerPolicy="no-referrer"
                   className="w-full aspect-4/5 object-cover object-center"
                 />
               </div>
@@ -127,3 +128,4 @@ export function AboutSection() {
     </section>
   );
 }
+```
