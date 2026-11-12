@@ -1,4 +1,3 @@
-```tsx
 import { CheckCircle2, Heart, Award, Users, Coffee } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
 import stylingImage from '../assets/images/styling_craft_action_1794477311576.jpg';
@@ -128,4 +127,3 @@ export function AboutSection() {
     </section>
   );
 }
-```
