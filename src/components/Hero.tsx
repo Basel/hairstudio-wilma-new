@@ -1,5 +1,7 @@
+```tsx
 import { Calendar, Phone, Clock, MapPin, Star, Sparkles, ChevronRight } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
+import heroImage from '../assets/images/hero_salon_interior_1794477310651.jpg';
 
 interface HeroProps {
   onOpenBooking: () => void;
@@ -42,7 +44,7 @@ export function Hero({ onOpenBooking }: HeroProps) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-stone-100/60 via-stone-50 to-white pt-8 pb-16 lg:pt-14 lg:pb-24 border-b border-stone-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Breadcrumb / Location kicker */}
         <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-stone-500 mb-6">
           <span className="flex items-center gap-1 text-amber-900 font-semibold">
@@ -63,7 +65,7 @@ export function Hero({ onOpenBooking }: HeroProps) {
 
         {/* Hero Split Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          
+
           {/* Left Column: Proposition & CTA */}
           <div className="lg:col-span-6 space-y-6">
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-stone-900 text-balance leading-[1.15]">
@@ -71,7 +73,7 @@ export function Hero({ onOpenBooking }: HeroProps) {
             </h1>
 
             <p className="text-base sm:text-lg text-stone-600 leading-relaxed max-w-xl">
-              Welkom bij Hairstudio Wilma. Al jaren hét adres in Grootegast voor persoonlijke aandacht, 
+              Welkom bij Hairstudio Wilma. Al jaren hét adres in Grootegast voor persoonlijke aandacht,
               vakmanschap en de juiste snit of kleur voor <strong className="text-stone-800 font-medium">dames, heren en kinderen</strong>.
             </p>
 
@@ -97,10 +99,15 @@ export function Hero({ onOpenBooking }: HeroProps) {
             {/* Telephone reassurance */}
             <div className="pt-1 flex items-center gap-2 text-xs text-stone-500">
               <Phone className="w-3.5 h-3.5 text-amber-800 shrink-0" />
-              <span>Liever telefonisch reserveren? Bel ons gerust op <a href={`tel:${SALON_INFO.contact.phoneRaw}`} className="font-medium text-stone-800 hover:text-amber-900 underline underline-offset-2">{SALON_INFO.contact.phone}</a></span>
+              <span>
+                Liever telefonisch reserveren? Bel ons gerust op{' '}
+                <a href={`tel:${SALON_INFO.contact.phoneRaw}`} className="font-medium text-stone-800 hover:text-amber-900 underline underline-offset-2">
+                  {SALON_INFO.contact.phone}
+                </a>
+              </span>
             </div>
 
-            {/* Proof bar: 4 clean features */}
+            {/* Proof bar */}
             <div className="pt-6 border-t border-stone-200/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-stone-600">
               <div>
                 <p className="font-semibold text-stone-900">Voor het hele gezin</p>
@@ -121,12 +128,11 @@ export function Hero({ onOpenBooking }: HeroProps) {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 bg-stone-100 group">
               <img
-                src="/src/assets/images/hero_salon_interior_1794477310651.jpg"
+                src={heroImage}
                 alt="Hairstudio Wilma salon interieur aan de Hoofdstraat in Grootegast"
-                referrerPolicy="no-referrer"
                 className="w-full aspect-16/10 object-cover object-center group-hover:scale-[1.02] transition-transform duration-500"
               />
-              
+
               {/* Overlay caption card */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-xl border border-stone-200/90 shadow-md flex items-center justify-between gap-4">
                 <div>
@@ -149,8 +155,8 @@ export function Hero({ onOpenBooking }: HeroProps) {
           </div>
 
         </div>
-
       </div>
     </section>
   );
 }
+```
