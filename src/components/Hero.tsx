@@ -1,4 +1,3 @@
-```tsx
 import { Calendar, Phone, Clock, MapPin, Star, Sparkles, ChevronRight } from 'lucide-react';
 import { SALON_INFO } from '../data/salonData';
 import heroImage from '../assets/images/hero_salon_interior_1794477310651.jpg';
@@ -159,4 +158,3 @@ export function Hero({ onOpenBooking }: HeroProps) {
     </section>
   );
 }
-```
