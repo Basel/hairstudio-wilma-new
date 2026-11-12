@@ -1,4 +1,11 @@
+```tsx
 import { Treatment, OpeningHourDay, GalleryPhoto, Review } from '../types';
+
+import salonInterior from '../assets/images/hero_salon_interior_1794477310651.jpg';
+import stylingCraft from '../assets/images/styling_craft_action_1794477311576.jpg';
+import balayage from '../assets/images/balayage_color_treatment_1794477311360.jpg';
+import careProducts from '../assets/images/salon_products_care_1794477312117.jpg';
+import happyClient from '../assets/images/portrait_happy_client_1794477312386.jpg';
 
 export const SALON_INFO = {
   name: 'Hairstudio Wilma',
@@ -256,7 +263,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: 'salon-interior',
     title: 'De Salon & Stylingsplekken',
     category: 'Studio',
-    src: '/src/assets/images/hero_salon_interior_1794477310651.jpg',
+    src: salonInterior,
     alt: 'Lichte moderne salon met warme houten stylingstations en comfortabele stoelen',
     description: 'Een rustige, lichte omgeving met warme houtaccenten en ruime spiegels voor een prettig bezoek.',
   },
@@ -264,7 +271,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: 'styling-craft',
     title: 'Vakmanschap & Precisie',
     category: 'Knippen',
-    src: '/src/assets/images/styling_craft_action_1794477311576.jpg',
+    src: stylingCraft,
     alt: 'Kapster in actie met schaar en kam met oog voor detail',
     description: 'Elke knipbeurt wordt met zorg en precisie afgestemd op uw persoonlijke wens.',
   },
@@ -272,7 +279,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: 'balayage-highlights',
     title: 'Zonnige Balayage & Glans',
     category: 'Kleuring',
-    src: '/src/assets/images/balayage_color_treatment_1794477311360.jpg',
+    src: balayage,
     alt: 'Gezond haar met zachte blonde balayage en natuurlijke glans',
     description: 'Subtiele kleurnuances die zorgen voor een levendig, natuurlijk en gezond kapsel.',
   },
@@ -280,7 +287,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: 'care-products',
     title: 'Kwaliteitsverzorging & Producten',
     category: 'Verzorging',
-    src: '/src/assets/images/salon_products_care_1794477312117.jpg',
+    src: careProducts,
     alt: 'Verzorgende milde haarproducten en glansserums',
     description: 'We werken uitsluitend met hoogwaardige haarverzorging die het haar voedt van wortel tot punt.',
   },
@@ -288,7 +295,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
     id: 'client-smile',
     title: 'Tevreden Klanten',
     category: 'Resultaat',
-    src: '/src/assets/images/portrait_happy_client_1794477312386.jpg',
+    src: happyClient,
     alt: 'Tevreden klant met fris geföhnd en gestyled kapsel',
     description: 'Persoonlijke aandacht en een kapsel waarin u zich comfortabel en zelfverzekerd voelt.',
   },
@@ -332,3 +339,4 @@ export const REVIEWS: Review[] = [
     service: 'Kinderen knippen',
   },
 ];
+```
