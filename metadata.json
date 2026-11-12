@@ -1,0 +1,6 @@
+{
+  "name": "Hairstudio Wilma | Kapsalon Grootegast",
+  "description": "Moderne, stijlvolle website voor Hairstudio Wilma in Grootegast. Bekijk behandelingen, actuele prijzen, openingstijden en plan direct uw afspraak.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
