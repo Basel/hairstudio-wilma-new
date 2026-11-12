@@ -1,4 +1,3 @@
-```tsx
 import { Treatment, OpeningHourDay, GalleryPhoto, Review } from '../types';
 
 import salonInterior from '../assets/images/hero_salon_interior_1794477310651.jpg';
@@ -339,4 +338,3 @@ export const REVIEWS: Review[] = [
     service: 'Kinderen knippen',
   },
 ];
-```
